@@ -1,6 +1,6 @@
 
-*`Hi, I'm Amal!`*  
-**`Programmer; Interested in the Design, Architecture, and Development of Software Applications.`**
+**`Hi, I'm Amal!`**  
+*`Programmer; Interested in the Design, Architecture, and Development of Software Applications.`*
 
 > mail to <a href="mailto:amaljoyc@gmail.com">amaljoyc@gmail.com</a>
 
