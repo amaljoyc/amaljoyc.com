@@ -1,7 +1,7 @@
 # Site settings
 title_left    : "amaljoyc"
 title_right   : ";" # default: ""
-description   : "Blog by amaljoyc"
+description   : ""
 keywords      : "programming, software, amaljoyc"
 url           : https://amaljoyc.github.io # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank

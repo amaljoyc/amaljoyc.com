@@ -4,11 +4,11 @@ title: About Me
 permalink: /about/
 ---
 
-<div class="divider"></div>
 
-### Hello! I'm Amal Joy Chemparathy!
+#### Hello! I'm Amal Joy Chemparathy!
 
 > Programmer;
+>
 > Interested in the Design, Architecture, and Development of Software Applications;
 
 <div class="divider"></div>
