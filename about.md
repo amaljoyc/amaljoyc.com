@@ -4,16 +4,19 @@ title: About Me
 permalink: /about/
 ---
 
+<div class="divider"></div>
+
 ### Hello! I'm Amal Joy Chemparathy!
 
-> Programmer; Interested in the Design, Architecture, and Development of Software Applications.
+> Programmer;
+> Interested in the Design, Architecture, and Development of Software Applications;
 
 <div class="divider"></div>
 
-* mail to amaljoyc@gmail.com
+* mail to <a href="mailto:amaljoyc@gmail.com">amaljoyc@gmail.com</a>
 
-* watch GitHub
+* watch <a href="https://github.com/amaljoyc">GitHub</a>
 
-* connect via LinkedIn
+* connect via <a href="https://de.linkedin.com/in/amaljoyc">LinkedIn</a>
 
-* download Resume
+* download [Resume](https://amaljoyc.github.io/resume.pdf)
