@@ -1,9 +1,8 @@
 ---
 layout: page
-title: About Me
+title: 
 permalink: /about/
 ---
-
 
 #### Hello! I'm Amal Joy Chemparathy!
 
