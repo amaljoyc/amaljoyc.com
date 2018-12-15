@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reverse Polish Notation (RPN) Calculator
-permalink: /ajc-matrix/calculator/
+permalink: /ajc-matrix/calculator
 ---
 
 ## Challenge
