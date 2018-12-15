@@ -20,4 +20,5 @@ You may assume that there won't be exceptional situations (like stack underflow 
 
 ## Solution
 
-> [Calculator.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/main/java/amaljoyc/matrix/calculator/Calculator.java)
+* [Calculator.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/main/java/amaljoyc/matrix/calculator/Calculator.java)
+* [CalculatorTest.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/test/java/amaljoyc/matrix/calculator/CalculatorTest.java) 

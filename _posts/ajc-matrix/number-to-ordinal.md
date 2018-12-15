@@ -20,4 +20,5 @@ th is used for all other numbers (e.g. 9th, pronounced ninth).
 
 ## Solution
 
-> [NumberToOrdinalConverter.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/main/java/amaljoyc/matrix/numbertoordinal/NumberToOrdinalConverter.java)
+* [NumberToOrdinalConverter.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/main/java/amaljoyc/matrix/numbertoordinal/NumberToOrdinalConverter.java)
+* [NumberToOrdinalConverterTest.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/test/java/amaljoyc/matrix/numbertoordinal/NumberToOrdinalConverterTest.java)

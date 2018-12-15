@@ -17,4 +17,5 @@ Never mask non-digit characters.
 
 ## Solution
 
-> [CreditCard.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/main/java/amaljoyc/matrix/maskcreditcard/CreditCard.java)
+* [CreditCard.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/main/java/amaljoyc/matrix/maskcreditcard/CreditCard.java)
+* [CreditCardTest.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/test/java/amaljoyc/matrix/maskcreditcard/CreditCardTest.java)
