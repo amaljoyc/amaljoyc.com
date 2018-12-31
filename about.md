@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title:
 permalink: /about/
 ---
 
@@ -18,4 +18,4 @@ Interested in the Design, Architecture, and Development of Software Applications
 
 * connect via <a href="https://de.linkedin.com/in/amaljoyc">LinkedIn</a>
 
-* download [Resume](https://amaljoyc.github.io/resume.pdf)
+* download [Resume]({{site.url}}/resume.pdf)
