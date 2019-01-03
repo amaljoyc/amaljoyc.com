@@ -95,3 +95,26 @@ Method Reference is just another way of writing Lambda Expressions. Method Refer
 
    String::new; // Method Reference
 ```
+
+<div class="divider"></div>
+
+#### Default Method
+
+A new kind of method that you can put in an interface. This default method is just a regular method with a `default` keyword infront of the return type. It allows to change the old interfaces without breaking the existing implementations.
+
+Also static methods are now allowed in Java 8 interfaces (just like the static final fields).
+
+```java
+public interface IntSample {
+
+    default int getOne() {
+        return 1;
+    }
+
+    static int getTwo() {
+        return 2;
+    }
+
+    int getInteger();
+}
+```
