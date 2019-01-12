@@ -191,47 +191,47 @@ The plugin exec-maven-plugin can be used to execute system programs and we will 
 
 ```xml
 <profiles>
-		<profile>
-			<id>it</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>exec-maven-plugin</artifactId>
-						<groupId>org.codehaus.mojo</groupId>
-						<version>1.2.1</version>
-						<executions>
-							<execution>
-								<id>Test infra Setup</id>
-								<phase>pre-integration-test</phase>
-								<goals>
-									<goal>exec</goal>
-								</goals>
-								<configuration>
-									<executable>${basedir}/infra.sh</executable>
-									<arguments>
-										<argument>start</argument>
-									</arguments>
-								</configuration>
-							</execution>
-							<execution>
-								<id>Test infra Teardown</id>
-								<phase>post-integration-test</phase>
-								<goals>
-									<goal>exec</goal>
-								</goals>
-								<configuration>
-									<executable>${basedir}/infra.sh</executable>
-									<arguments>
-										<argument>stop</argument>
-									</arguments>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+  <profile>
+    <id>it</id>
+    <build>
+      <plugins>
+        <plugin>
+          <artifactId>exec-maven-plugin</artifactId>
+          <groupId>org.codehaus.mojo</groupId>
+          <version>1.2.1</version>
+          <executions>
+            <execution>
+              <id>Test infra Setup</id>
+              <phase>pre-integration-test</phase>
+              <goals>
+                <goal>exec</goal>
+              </goals>
+              <configuration>
+                <executable>${basedir}/infra.sh</executable>
+                <arguments>
+                  <argument>start</argument>
+                </arguments>
+              </configuration>
+            </execution>
+            <execution>
+              <id>Test infra Teardown</id>
+              <phase>post-integration-test</phase>
+              <goals>
+                <goal>exec</goal>
+              </goals>
+              <configuration>
+                <executable>${basedir}/infra.sh</executable>
+                <arguments>
+                  <argument>stop</argument>
+                </arguments>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+</profiles>
 ```
 
 the infra.sh is just a sample bash file which will contain commands to run and kill your infra dependencies. The arguments start and stop are also sample arguments taken by this bash script to execute the needed commands.
