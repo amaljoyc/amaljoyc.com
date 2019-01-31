@@ -100,3 +100,36 @@ public class SampleModel {
 public interface SampleModelRepository extends CrudRepository<SampleModel, String> {
 }
 ```
+
+#### Docker Compose
+
+You can then use docker-compose to run your redis server which can then be connected with your new spring-boot application. For this, just create a file called docker-compose.yaml under the root of your project and add the below content into this file.
+
+```yml
+version: '3.1'
+
+networks:
+  infra:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.178.0.0/24
+
+services:
+  redis:
+    image: redis
+    restart: always
+    hostname: redis
+    networks:
+      infra:
+        ipv4_address: 192.178.0.10
+    ports:
+      - 16379:6379
+    command: redis-server --requirepass mypass
+```
+
+to start the redis server, execute the following command,
+
+```
+docker-compose up
+```
