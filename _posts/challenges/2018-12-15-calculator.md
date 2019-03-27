@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reverse Polish Notation (RPN) Calculator
+categories: challenges
 ---
 
 ## Challenge
