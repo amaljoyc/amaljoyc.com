@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Test Reverse Polish Notation (RPN) Calculator
+title: Reverse Polish Notation (RPN) Calculator
 ---
 
 ## Challenge
