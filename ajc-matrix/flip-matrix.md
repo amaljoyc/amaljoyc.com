@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Flip a Matrix
 permalink: /ajc-matrix/flip-matrix
 ---

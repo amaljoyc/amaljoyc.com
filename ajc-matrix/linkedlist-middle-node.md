@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: page
 title: Find Middle node of a LinkedList
+permalink: /ajc-matrix/linkedlist-middle-node
 ---
 
 ## Challenge
