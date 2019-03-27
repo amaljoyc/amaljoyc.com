@@ -6,8 +6,5 @@ description: "Contains list of challenges from the github project 'ajc-matric'"
 keywords: "coding, challenges, programming, algorithms"
 ---
 
-* [Reverse Polish Notation (RPN) Calculator](/ajc-matrix/calculator)
-* [Mask Credit Card Number](/ajc-matrix/mask-credit-card)
-* [Convert Number to Ordinal](/ajc-matrix/number-to-ordinal)
-* [Flip a Matrix](/ajc-matrix/flip-matrix)
-* [Find Middle Node of a LinkedList](/ajc-matrix/linkedlist-middle-node)
+* To view the complete and detailed list of coding challenges, [Click Here!](/challenges)
+* To clone the source code of above listed challenges, [go to github](https://github.com/amaljoyc/ajc-matrix)

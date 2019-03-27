@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Mask Credit Card Number
-permalink: /ajc-matrix/mask-credit-card
 ---
 
 ## Challenge

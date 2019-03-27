@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Convert Number to Ordinal
-permalink: /ajc-matrix/number-to-ordinal
 ---
 
 ## Challenge
