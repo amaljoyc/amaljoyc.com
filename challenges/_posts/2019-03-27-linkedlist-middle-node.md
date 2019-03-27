@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Find Middle node of a LinkedList
 ---
 

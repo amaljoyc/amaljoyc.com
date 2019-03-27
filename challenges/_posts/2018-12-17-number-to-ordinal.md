@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Convert Number to Ordinal
 ---
 

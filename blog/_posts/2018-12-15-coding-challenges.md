@@ -7,4 +7,4 @@ keywords: "coding, challenges, programming, algorithms"
 ---
 
 * To view the complete and detailed list of coding challenges, [Click Here!](/challenges)
-* To clone the source code of above listed challenges, [go to github](https://github.com/amaljoyc/ajc-matrix)
+* To clone the source code of above listed challenges, [go to github!](https://github.com/amaljoyc/ajc-matrix)

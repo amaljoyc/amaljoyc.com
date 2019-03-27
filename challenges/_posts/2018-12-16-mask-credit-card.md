@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Mask Credit Card Number
 ---
 
