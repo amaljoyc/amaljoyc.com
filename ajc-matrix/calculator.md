@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title: Reverse Polish Notation (RPN) Calculator
+date: 2018-12-15
 permalink: /ajc-matrix/calculator
 ---
 
@@ -21,4 +22,4 @@ You may assume that there won't be exceptional situations (like stack underflow 
 ## Solution
 
 * [Calculator.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/main/java/amaljoyc/matrix/calculator/Calculator.java)
-* [CalculatorTest.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/test/java/amaljoyc/matrix/calculator/CalculatorTest.java) 
+* [CalculatorTest.java](https://github.com/amaljoyc/ajc-matrix/blob/master/src/test/java/amaljoyc/matrix/calculator/CalculatorTest.java)
