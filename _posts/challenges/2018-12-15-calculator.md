@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Reverse Polish Notation (RPN) Calculator
-date: 2018-12-15
-permalink: /ajc-matrix/calculator
 ---
 
 ## Challenge
