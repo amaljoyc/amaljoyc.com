@@ -8,13 +8,13 @@ title: Home
 <section class="post-list">
   <div class="container">
     {% for post in site.categories.challenges %}
-      {% if forloop.last %}
+      {% if forloop.first %}
         <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
       {% else %}
-        {% assign next_index = forloop.index0 | plus: 1 %}
+        {% assign prev_index = forloop.index0 | minus: 1 %}
         {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ site.categories.challenges[next_index].date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
+        {% capture pyear %}{{ site.categories.challenges[prev_index].date | date: '%Y' }}{% endcapture %}
+        {% if year != pyear %}
           <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
         {% endif %}
       {% endif %}
