@@ -8,15 +8,16 @@ title: Home
 <section class="post-list">
   <div class="container">
     {% for post in site.categories.challenges %}
-      {% unless post.next %}
+      {% if forloop.last %}
         <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
       {% else %}
+        {% assign next_index = forloop.index0 | plus: 1 %}
         {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ site.categories.challenges[next_index].date | date: '%Y' }}{% endcapture %}
         {% if year != nyear %}
           <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
         {% endif %}
-      {% endunless %}
+      {% endif %}
       <article class="post-item">
         <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
         <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
