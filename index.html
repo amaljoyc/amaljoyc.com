@@ -13,7 +13,7 @@ title: Home
       {% else %}
         {% assign prev_index = forloop.index0 | minus: 1 %}
         {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture pyear %}{{ site.categories.challenges[prev_index].date | date: '%Y' }}{% endcapture %}
+        {% capture pyear %}{{ site.categories.blog[prev_index].date | date: '%Y' }}{% endcapture %}
         {% if year != pyear %}
           <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
         {% endif %}
