@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Singleton Pattern
+tags: creational
 ---
 
 ## Concepts

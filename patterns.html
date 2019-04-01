@@ -9,8 +9,8 @@ title: Design Patterns
   <div class="container">
     {% for post in site.categories.patterns %}
       hello
-      {{ post.dir }}
-      {% if post.dir contains "creational" %}
+      {{ post.tags }}
+      {% if post.tags contains "creational" %}
         <h2 class="category-title">{{ 'Creational Patterns' }}</h2>
         <article class="post-item">
           <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
