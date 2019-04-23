@@ -15,3 +15,4 @@ tags: creational
 
 - [Singleton.java]()
 - [ThreadSafeSingleton.java]()
+- [SingletonDemo.java]()
