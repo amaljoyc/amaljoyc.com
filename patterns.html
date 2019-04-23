@@ -7,21 +7,29 @@ title: Design Patterns
 
 <section class="post-list">
   <div class="container">
+    <h2 class="category-title">{{ 'Creational Patterns' }}</h2>
     {% for post in site.categories.patterns %}
       {% if post.tags contains "creational" %}
-        <h2 class="category-title">{{ 'Creational Patterns' }}</h2>
         <article class="post-item">
           <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
           <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
         </article>
-      {% elsif post.tags contains "structural" %}
-        <h2 class="category-title">{{ 'Structural Patterns' }}</h2>
+      {% endif %}
+    {% endfor %}
+
+    <h2 class="category-title">{{ 'Structural Patterns' }}</h2>
+    {% for post in site.categories.patterns %}
+      {% if post.tags contains "structural" %}
         <article class="post-item">
           <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
           <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
         </article>
-      {% elsif post.tags contains "behavioral" %}
-        <h2 class="category-title">{{ 'Behavioral Patterns' }}</h2>
+      {% endif %}
+    {% endfor %}
+
+    <h2 class="category-title">{{ 'Behavioral Patterns' }}</h2>
+    {% for post in site.categories.patterns %}
+      {% if post.tags contains "behavioral" %}
         <article class="post-item">
           <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
           <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></div>
