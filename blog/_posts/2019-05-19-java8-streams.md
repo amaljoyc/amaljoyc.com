@@ -6,7 +6,7 @@ description: "Tutorial on Stream API introduced in Java 8"
 keywords: "java8, streams, java"
 ---
 
-A stream is a java typed interface. Even if it might look like a Collection, a Stream is not a Collection.Stream can efficiently process large amounts of data. A stream is an object `that doesn't hold any data`. And also a Stream cannot be reused, it has to be built again for another use - thus, the `stream()` is a very lightweight method.
+A stream is a java typed interface. Even if it might look like a Collection, a Stream is not a Collection. Stream can efficiently process large amounts of data. A stream is an object `that doesn't hold any data`. And also a Stream cannot be reused, it has to be built again for another use - thus, the `stream()` is a very lightweight method.
 
 ```java
 public interface Stream<T> extends BaseStream<T, Stream<T>> {
@@ -53,9 +53,9 @@ Stream.of("abc", "de", "xyz")
 
 #### Reduce Operation
 
-Reduce is a terminal operation and hence will trigger the processing of data. It is used to perform operation like aggregation ie., min, max, sum, average etc. The reduce method can take two arguments.
+Reduce is a terminal operation and hence will trigger the processing of data. It is used to perform operation like aggregation ie. min, max, sum, average etc. The reduce method can take two arguments.
 1. The first argument is the identity element of the reduction operation.
-2. The second argument is the reduction operation, of type BinaryOperator<T>.
+2. The second argument is the reduction operation, of type `BinaryOperator<T>`.
 
 The first argument is not mandatory. So if only one argument is given and it is the reduction operation, then the reduce method will return `Optional<T>` object as result. If both arguments are given, then the reduce method will return the `result of type T`. Both these approaches are shown below.
 
