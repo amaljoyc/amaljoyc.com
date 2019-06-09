@@ -19,4 +19,6 @@ through the application of technology.
 
 * connect via <a href="https://de.linkedin.com/in/amaljoyc">LinkedIn</a>
 
+<!---
 * download [Resume]({{site.url}}/amaljoyc-resume.pdf)
+--->
