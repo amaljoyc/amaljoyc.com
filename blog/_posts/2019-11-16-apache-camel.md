@@ -6,9 +6,9 @@ description: "Apache Camel intro and examples"
 keywords: "java, kotlin, camel, spring"
 ---
 
-Apache Camel is a very nice and open source Java framework that helps to make integrations easier. It provides concrete implementations for a lot of Enterprise Integration Patterns. The DSL support (or the Fluent API) makes it even more concise and simple to read and write.
+Apache Camel is a very nice and open source framework for Java that helps to make integrations easier and faster. It implements a lot of [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/) out of the box. The DSL support (or the Fluent API) makes it even more concise and simple to read and write.
 
-In simple terms, it helps to send messages from say Sender A to Sender B. It can do so in a variety of protocols like FTP, HTTP, ActiveMQ, JMS etc. There are so many readily available components that camel provides, you don't have to spend a lot of time implementing integrations yourself anymore. A complete list of camel components (total was around 300+ when I checked last time) can be found in [github!](https://github.com/apache/camel/tree/master/components)
+In simple terms, it allows you to send data from one place to the other through a set of defined routes. It can do so in a variety of protocols like FTP, HTTP, ActiveMQ, JMS etc. There are so many readily available components that camel provides, you don't have to spend a lot of time implementing integrations yourself anymore. A complete list of camel components (total was around 300+ when I checked last time) can be found in [github!](https://github.com/apache/camel/tree/master/components)
 
 Apache Camel also integrates nicely with Spring and the example that I am listing below will use Spring and Kotlin. The complete demo project can be found in github - [apache-camel-demo](https://github.com/amaljoyc/apache-camel-demo)
 
