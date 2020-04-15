@@ -4,9 +4,9 @@ title:
 permalink: /about/
 ---
 
-#### Hello! I'm Amal Joy Chemparathy!
+#### Hello! I'm Amal Chemparathy!
 
-I’m a Software Engineer with 7+ years of professional experience in the
+Software Engineer with 8+ years of professional experience in the
 design, architecture and development of many Software Applications. I have a
 strong passion for solving problems and building products and solutions
 through the application of technology.

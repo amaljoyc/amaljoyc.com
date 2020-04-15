@@ -28,7 +28,7 @@ sass:
 
 # Author settings
 author:
-  name     : "Amal Joy Chemparathy"
+  name     : "Amal Chemparathy"
 
 plugins:
   - jekyll-sitemap

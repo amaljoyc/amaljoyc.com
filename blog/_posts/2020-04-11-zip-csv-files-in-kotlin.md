@@ -50,5 +50,5 @@ ZipOutputStream(BufferedOutputStream(FileOutputStream("sample.zip"))).use { zos 
 }
 ```
 
-Here a sample map is taken which contains the beans that we want to include in each of the csv file as rows. Each of these csv files are then put as a zip entry. The `use` construct used above will make sure that the streams like ZipOutputStream, BufferedOutputStream, FileOutputStream etc are closed properly when done. Also not that the `use` will only call the `close()` method of these streams/resources, hence it is necessary to explicitly do the `zos.closeEntry()` call to make sure the zip entry is closed after each csv is written into it.
+Here a sample map is taken which contains the beans that we want to include in each of the csv file as rows. Each of these csv files are then put as a zip entry. The `use` construct used above will make sure that the streams like ZipOutputStream, BufferedOutputStream, FileOutputStream etc are closed properly when done. Also note that the `use` will only call the `close()` method of these streams/resources, hence it is necessary to explicitly do the `zos.closeEntry()` call to make sure the zip entry is closed after each csv is written into it.
 
