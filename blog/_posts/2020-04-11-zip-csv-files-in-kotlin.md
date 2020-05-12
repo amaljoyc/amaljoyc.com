@@ -27,6 +27,7 @@ fun write(rows: List<MyBean>, writer: OutputStreamWriter) {
             .withApplyQuotesToAll(false)
             .build()
             .write(rows)
+    writer.flush()
 }
 ```
 
