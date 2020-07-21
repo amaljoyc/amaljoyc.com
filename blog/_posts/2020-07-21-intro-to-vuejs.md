@@ -28,7 +28,11 @@ var app = new Vue({
   }
 })
 ```
-Here we use string interpolation which is defined using ```{{ title }}``` on the html template to display the `title` variable defined in the javascript.
+Here we use string interpolation which is defined using
+```
+{{ title }}
+```
+on the html template to display the `title` variable defined in the javascript.
 
 ### `Vue directives`
 Vue provides various directives which are listed below,
@@ -278,7 +282,10 @@ export default {
     } 
 }
 ```
-and then `doubleCounter` above can be used directly in template as ```{{doubleCounter}}```
+and then `doubleCounter` above can be used directly in template as
+```
+{{doubleCounter}}
+```
 
 - Similarly, `mapMutations` can be used to get access to all mutation methods
 ```javascript
