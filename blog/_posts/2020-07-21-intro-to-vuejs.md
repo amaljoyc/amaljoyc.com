@@ -10,7 +10,7 @@ Here is a brief introduction to Vue.js (version 2). This is by no means a comple
 
 To dig deep and know more, you can find a more detailed documentation on the [official Vue.js guide](https://vuejs.org/v2/guide/)
 
-### `HelloWorld`
+### HelloWorld
 
 The `HelloWorld` app is as simple as
 
@@ -34,7 +34,7 @@ Here we use string interpolation which is defined using
 ```
 on the html template to display the `title` variable defined in the javascript.
 
-### `Vue directives`
+### Vue directives
 Vue provides various directives which are listed below,
 - `v-on` -> to listen to an event (from html template to vuejs). It can be replaced with a shorthand -> `@`
 - `v-bind` -> to bind (from vuejs to html). It can be replaced with a shorthand -> `:`
@@ -50,7 +50,7 @@ Vue provides various directives which are listed below,
 
 Note: Custom directives can be created using `Vue.directive()` method.
 
-### `Vue instance`
+### Vue instance
 ```javascript
 new Vue({
     el: '#sampleid',
@@ -87,41 +87,41 @@ new Vue({
 })
 ```
 
-#### `data`
+#### data
 - It is the private memory of each component where you can store any variables you need
 
-#### `props`
+#### props
 - props are how you pass this data from a parent component down to a child component
 
-#### `computed`
+#### computed
 - The functions inside `computed` (or computed properties as they are called) gets called by itself, as the properties used inside changes. 
 - They are calculations that will be cached based on their dependencies and will only update when needed.
 - More optimal than `watch`.
 - Need to run synchronously.
 
-#### `watch`
+#### watch
 - Can be used when `computed` is not possible.
 - The property name of a `watch` must match one of the properties used inside the data field.
 - This is another way to check if something changed on a data property and perform some action in response to that change.
 - Can also run asynchronously (so can use any async methods inside the logic)
 
-#### `components`
+#### components
 - These are used to define local components instead of a single global component.
 - For global component definition, we can use `Vue.component()` method.
 
-#### `render`
+#### render
 - Useful for adding a vuejs template (like rendering an App.vue file)
 
-#### `directives`
+#### directives
 - To register local directives
 
-### `Vue Component`
+### Vue Component
 - Used for reusing components or parts.
 - When you write a vue component, the data must be a function instead of just a property (this is to make sure state is different in each copy of component).
 - `el` property doesn't work inside a component.
 - The first arg of `Vue.component()` is tag name, 2nd arg is a vue instance.
 
-### `Component Communication`
+### Component Communication
 - `Parent -> Child` communication is done via props. Parent would pass the value to the props in the component tag and child component can use it as a property in its template.
 - Child can communicate back to parent via,
     1. `custom events` - ie, child will create and $emit a custom event, which the parent can listen to and then use the event data as `$event`.
@@ -130,12 +130,12 @@ new Vue({
     - Since this can get quiet complex when there are so many children, we can use an eventBus (which is a Vue instance) and pass the custom events via this eventBus directly from child1 -> child2
     - for bigger application, `Vuex` could be used as the eventStore instead of the eventBus
 
-### `Passing content with slot`
+### Passing content with slot
 - By using `<slot></slot>` in child component template.
 - Parent can pass in any html inside the component tag of child.
 - The styling, the javascript, vue and every other data processing like string interpolation is applied to the html by the `parent and not the child`.
 
-### `Using multiple named slot`
+### Using multiple named slot
 - On child, you specify the `name`
 ```javascript
 <slot name="title"></slot>
@@ -148,12 +148,12 @@ new Vue({
 ```
 - Unnamed slot will be considered as the default slot.
 
-### `Dynamic component in template`
+### Dynamic component in template
 - Done using tag `<component :is="selectedComponent"></component>` where `selectedComponent` is a data property that holds the name of the component as string.
 - By default when you navigate from one component1 to another component2, the component1 is destroyed and component2 is created new. If you want to avoid this behavior, we can use,
     - keep alive support using the tag `<keep-alive></keep-alive>` and you put your component tag inside this keep-alive tag.
 
-### `Filters and Mixins`
+### Filters and Mixins
 - Filters are used for transforming a value. In template, it can be used with pipe symbol and also supports multiple piping as given below,
 ```javascript
 {{ title | mySpecialFilter1 | myFilter2 }}
@@ -163,7 +163,7 @@ new Vue({
     -> we use the `mixins` propery in vue instance to achieve the same, it takes a array of values.
 - When importing mixins, the local component where the mixin was imported has the last word, meaning it can override if same things are defined in mixin as well as local component or Vue instance.
 
-### `Axios`
+### Axios
 - Alternative for `vue-resource`.
 - Useful to communicate with a backend REST API service.
 - eg, is given below
@@ -175,7 +175,7 @@ axios.post(url, data, config)
 - Similarly you have `axios.get()`, `axios.put()` etc.
 - `axios.create()` will create a new custom instance of axios. Instead if you use axios directly, you share the same global object whole over in your application.
 
-### `vue-router`
+### vue-router
 - Used for making SPA (Single Page Application)
 - Include it using `Vue.use(VueRouter)`
 - Then create a new instance of VueRouter by passing in the routes as arg
@@ -215,11 +215,11 @@ this.$router.push({
 })
 ```
 
-### `Lazy loading routes`
+### Lazy loading routes
 - To make sure not all routes are loaded in the beginning, but only when you click on them.
 - Every bundler you use will handle this differently. So if you are using webpack, you need to write some custom code to not import all modules in the beginning of the script, but resolve later on.
 
-### `Vuex - for state management`
+### Vuex - for state management
 - Vuex store is created and integrated into root Vue instance as given below,
 ```javascript
 import Vuex from 'vuex'
@@ -319,7 +319,7 @@ export default {
 <button @click="increment({key: 'value'})"></button> // --> this will pass an object as the payload
 ```
 
-### `Useful npm commands`
+### Useful npm commands
 Now to start your first project, find below some npm command references.
 
 - `npm install -g vue-cli` -> to install vue-cli which is a command line tool to create Vue projects
@@ -329,7 +329,7 @@ Now to start your first project, find below some npm command references.
 - In case if npm run does nothing, verify this -> `npm config get ignore-scripts` -> if this is true, then run following -> `npm config set ignore-scripts false`
 - `npm run build` -> build in order to deploy the app in prod
 
-### `Vue with TypeScript`
+### Vue with TypeScript
 sample export of vue instance with a Typescript class
 
 ```typescript
