@@ -28,7 +28,7 @@ var app = new Vue({
   }
 })
 ```
-Here we use string interpolation which is defined using `{{ title }}` on the html template to display the `title` variable defined in the javascript.
+Here we use string interpolation which is defined using \{\{ title \}\} on the html template to display the `title` variable defined in the javascript.
 
 ### `Vue directives`
 Vue provides various directives which are listed below,
@@ -150,8 +150,10 @@ new Vue({
     - keep alive support using the tag `<keep-alive></keep-alive>` and you put your component tag inside this keep-alive tag.
 
 ### `Filters and Mixins`
-- Filters are used for transforming a value. In template, it can be used with pipe symbol and also supports multiple piping 
-    -> `{{ title | mySpecialFilter1 | myFilter2 }}`
+- Filters are used for transforming a value. In template, it can be used with pipe symbol and also supports multiple piping as given below,
+```javascript
+{{ title | mySpecialFilter1 | myFilter2 }}
+```
 - Filters are not very performant, so it is not advised to use it for complex filtering, instead the filtering can be achieved by computed and JS filter method. 
 - Mixins are a way to mix other data or methods or computed etc stored in a global .js file to be imported and mixed into the current Vue instance
     -> we use the `mixins` propery in vue instance to achieve the same, it takes a array of values.
@@ -276,7 +278,7 @@ export default {
     } 
 }
 ```
-and then `doubleCounter` above can be used directly in template as {{doubleCounter}}.
+and then `doubleCounter` above can be used directly in template as \{\{doubleCounter\}\}
 
 - Similarly, `mapMutations` can be used to get access to all mutation methods
 ```javascript
