@@ -12,7 +12,7 @@ Being passionate about programming is good, but it has got its own perils. One s
 
 I used to be a programmer who tried to write the best and clean code one line at a time. If I don't feel good about a line of code I wrote, I used to rewrite it immediately until I could accept it. This went on and on and it used to take me hours before I could finish up implementing a feature.
 
-Another reason for me being slow was due to making premature optimizations. All those abstractions that I thought in the beginning was not really necessary when I starting implementing them.
+Another reason for me being slow was due to making premature optimizations. All those abstractions that I thought in the beginning was not really necessary when I started implementing them.
 
 ### How do I code now?
 
